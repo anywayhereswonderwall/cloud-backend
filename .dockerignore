@@ -1,0 +1,15 @@
+Dockerfile
+docker-compose.yml
+docker-compose.override.yml
+.dockerignore
+target/
+*.jar
+*.war
+*.ear
+.git
+.gitignore
+.svn
+.hg
+.bzr
+.vscode
+.idea

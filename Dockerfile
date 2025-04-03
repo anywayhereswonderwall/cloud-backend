@@ -8,13 +8,13 @@
 
 # ENTRYPOINT ["java", "-jar", "/ChatApp.jar"]
 # BUILD
-FROM openjdk:18 AS build
+FROM amazoncorretto:17-alpine AS build
 WORKDIR /app
 COPY . .
 RUN ./gradlew build
 
 # RUN
-FROM openjdk:18
+FROM amazoncorretto:17-alpine
 WORKDIR /app
 EXPOSE 8081
 

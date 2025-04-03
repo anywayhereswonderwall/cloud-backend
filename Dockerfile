@@ -8,7 +8,7 @@
 
 # ENTRYPOINT ["java", "-jar", "/ChatApp.jar"]
 # BUILD
-FROM eclipse-temurin:17-jdk-jammy AS build
+FROM openjdk:18 AS build
 WORKDIR /app
 COPY . .
 RUN ./gradlew build
